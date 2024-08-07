@@ -2,84 +2,94 @@
 
 import styled from "styled-components";
 
-export const ImageStyle = {
-  borderRadius: "50%",
-  width: "100%",
-  height: "auto",
-};
-
-export const ImageContainer = styled.div`
-  padding: 10px;
-`;
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-export const LateralNav = styled.div`
-  background-color: #444343;
-  width: 20%;
-  height: 100vh;
+export const PrincipalContainer = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  width: 100%;
+`;
+
+export const NavSections = styled.div`
+  width: 100%;
+  background-color: #0047FF;
+  height: 40px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+`;
+
+// export const NavSectionsAfterHome = styled.div``
+
+export const NavIcon = styled.div`
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 50px;
+`;
+
+export const UlNavSections = styled.ul`
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+`;
+
+export const LiNavDefault = styled.li`
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+`;
+
+export const LiNavHome = styled(LiNavDefault)`
+  :hover {
+    color: #000000;
+    border-bottom: solid 10px;
+  }
+`;
+export const LiNavAbout = styled(LiNavDefault)`
+  :hover {
+    color: #000000;
+    border-bottom: solid 10px;
+  }
+`;
+export const LiNavKnowlodges = styled(LiNavDefault)`
+  :hover {
+    color: #000000;
+    border-bottom: solid 10px;
+  }
+`;
+export const LiNavProjects = styled(LiNavDefault)`
+  :hover {
+    color: #000000;
+    border-bottom: solid 10px;
+  }
+`;
+export const LiNavContacts = styled(LiNavDefault)`
+  :hover {
+    color: #000000;
+    border-bottom: solid 10px;
+  }
 `;
 
 export const ContentPage = styled.div`
-  width: 100%;
-  height: 100vh;
-  border: 2px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 40px;
+  background-color: #000000;
 `;
 
-export const ULlistpages = styled.ul`
-  list-style: none;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+
+const SectionDefault = styled.section`
   height: 100%;
-`;
-
-export const LIlistpagesDefaut = styled.li`
-  /* border: solid black;
-  border-width: 2px 2px 2px 2px; */
-  box-sizing: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-`;
-
-export const LIlistpagesHome = styled(LIlistpagesDefaut)`
-  color: aquamarine;
-`;
-
-export const LIlistpagesAbout = styled(LIlistpagesDefaut)``;
-
-export const LIlistpagesKnowlodges = styled(LIlistpagesDefaut)``;
-
-export const LIlistpagesProjects = styled(LIlistpagesDefaut)``;
-
-export const LIlistpagesContacts = styled(LIlistpagesDefaut)``;
-
-export const ButtonPagesDefault = styled.button`
   width: 100%;
-  height: 100%;
-  border: none;
-  font-size: 150%;
 `;
 
-export const ButtonHome = styled(ButtonPagesDefault)``;
-
-export const ButtonAbout = styled(ButtonPagesDefault)``;
-
-export const ButtonKnowlodges = styled(ButtonPagesDefault)``;
-
-export const ButtonProjects = styled(ButtonPagesDefault)``;
-
-export const ButtonContacts = styled(ButtonPagesDefault)``;
+export const SectionHome = styled(SectionDefault)``;
+export const SectionAbout = styled(SectionDefault)``;
+export const SectionKnowlodges = styled(SectionDefault)``;
+export const SectionProjects = styled(SectionDefault)``;
+export const SectionContacts = styled(SectionDefault)``;

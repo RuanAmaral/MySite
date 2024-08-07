@@ -1,80 +1,87 @@
-import Image from "next/image";
+'use client'
+
 import {
-  ButtonAbout,
-  ButtonContacts,
-  ButtonHome,
-  ButtonKnowlodges,
-  ButtonProjects,
-  Container,
   ContentPage,
-  ImageContainer,
-  ImageStyle,
-  LateralNav,
-  LIlistpagesAbout,
-  LIlistpagesContacts,
-  LIlistpagesHome,
-  LIlistpagesKnowlodges,
-  LIlistpagesProjects,
-  ULlistpages,
+  LiNavAbout,
+  LiNavContacts,
+  LiNavHome,
+  LiNavKnowlodges,
+  LiNavProjects,
+  NavIcon,
+  NavSections,
+  PrincipalContainer,
+  SectionAbout,
+  SectionContacts,
+  SectionHome,
+  SectionKnowlodges,
+  SectionProjects,
+  UlNavSections,
 } from "./style";
-import exemple from "./images/perfilexample.png";
-import { Black_Ops_One } from "next/font/google";
+import { Exo_2 } from "next/font/google";
 import HomePage from "./sections/home";
 import AboutPage from "./sections/about";
 import KnowlodgesPage from "./sections/knowlodges";
 import ProjectsPage from "./sections/projects";
 import ContactsPage from "./sections/contacts";
 
-const blackOpsFont = Black_Ops_One({
+const Exo_2Font = Exo_2({
   subsets: ["latin"],
   display: "swap",
   weight: "400",
 });
 
-
 export default function Home() {
-
   return (
-    <Container>
-      <LateralNav>
-        <ImageContainer>
-          <Image
-            src={exemple}
-            alt="Perfil Image"
-            style={ImageStyle}
-          />
-        </ImageContainer>
-        <ULlistpages>
-          <LIlistpagesHome>
-            <ButtonHome className={blackOpsFont.className}>Home</ButtonHome>
-          </LIlistpagesHome>
-          <LIlistpagesAbout>
-            <ButtonAbout className={blackOpsFont.className}>About</ButtonAbout>
-          </LIlistpagesAbout>
-          <LIlistpagesKnowlodges>
-            <ButtonKnowlodges className={blackOpsFont.className}>
+    <PrincipalContainer>
+      <NavSections>
+        <NavIcon>RAL</NavIcon>
+        <UlNavSections>
+          <LiNavHome>
+            <a href="#" className={Exo_2Font.className}>
+              Home
+            </a>
+          </LiNavHome>
+          <LiNavAbout>
+            <a href="#" className={Exo_2Font.className}>
+              About
+            </a>
+          </LiNavAbout>
+          <LiNavKnowlodges>
+            <a href="#" className={Exo_2Font.className}>
               Knowlodges
-            </ButtonKnowlodges>
-          </LIlistpagesKnowlodges>
-          <LIlistpagesProjects>
-            <ButtonProjects className={blackOpsFont.className}>
+            </a>
+          </LiNavKnowlodges>
+          <LiNavProjects>
+            <a href="#" className={Exo_2Font.className}>
               Projects
-            </ButtonProjects>
-          </LIlistpagesProjects>
-          <LIlistpagesContacts>
-            <ButtonContacts className={blackOpsFont.className}>
+            </a>
+          </LiNavProjects>
+          <LiNavContacts>
+            <a href="#" className={Exo_2Font.className}>
               Contacts
-            </ButtonContacts>
-          </LIlistpagesContacts>
-        </ULlistpages>
-      </LateralNav>
+            </a>
+          </LiNavContacts>
+        </UlNavSections>
+      </NavSections>
       <ContentPage>
-        <section><HomePage></HomePage></section>
-        <section><AboutPage></AboutPage></section>
-        <section><KnowlodgesPage></KnowlodgesPage></section>
-        <section><ProjectsPage></ProjectsPage></section>
-        <section><ContactsPage></ContactsPage></section>
+        <SectionHome>
+          <HomePage
+            nextSectionFunction={() => alert("pass to about")}
+          ></HomePage>
+        </SectionHome>
+        <SectionAbout>
+          <AboutPage></AboutPage>
+        </SectionAbout>
+        <SectionKnowlodges>
+          <KnowlodgesPage></KnowlodgesPage>
+        </SectionKnowlodges>
+        <SectionProjects>
+          <ProjectsPage></ProjectsPage>
+        </SectionProjects>
+        <SectionContacts>
+          <ContactsPage></ContactsPage>
+        </SectionContacts>
       </ContentPage>
-    </Container>
+    </PrincipalContainer>
   );
 }
