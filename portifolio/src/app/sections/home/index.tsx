@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Orbitron } from "next/font/google";
 import {
   ContainerHome,

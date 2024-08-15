@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const ContainerHome = styled.div`
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 `;

@@ -79,7 +79,7 @@ export const LiNavContacts = styled(LiNavDefault)`
 
 export const ContentPage = styled.div`
   margin-top: 40px;
-  background-color: #000000;
+  background-color: #121212;
 `;
 
 
@@ -88,8 +88,12 @@ const SectionDefault = styled.section`
   width: 100%;
 `;
 
-export const SectionHome = styled(SectionDefault)``;
-export const SectionAbout = styled(SectionDefault)``;
+export const SectionHome = styled(SectionDefault)`
+height: auto;
+`;
+export const SectionAbout = styled(SectionDefault)`
+  height: auto;
+`;
 export const SectionKnowlodges = styled(SectionDefault)``;
 export const SectionProjects = styled(SectionDefault)``;
 export const SectionContacts = styled(SectionDefault)``;
