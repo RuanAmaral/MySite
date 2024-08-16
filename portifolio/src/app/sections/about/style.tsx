@@ -1,7 +1,6 @@
 "use client";
 
 import styled from "styled-components";
-// #e0e8f9;
 
 export const AboutContainer = styled.div`
   background-color: #1e1e1e;
@@ -53,5 +52,4 @@ export const ImageStyle = {
   width: "100%",
   height: "100%",
   borderRadius: "3%",
-  //   border: "1px solid #fff",
 };

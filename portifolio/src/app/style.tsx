@@ -11,7 +11,7 @@ export const PrincipalContainer = styled.div`
 
 export const NavSections = styled.div`
   width: 100%;
-  background-color: #0047FF;
+  background-color: #0047ff;
   height: 40px;
   position: fixed;
   display: flex;
@@ -82,18 +82,24 @@ export const ContentPage = styled.div`
   background-color: #121212;
 `;
 
-
 const SectionDefault = styled.section`
   height: 100%;
   width: 100%;
 `;
 
 export const SectionHome = styled(SectionDefault)`
-height: auto;
+  height: auto;
 `;
 export const SectionAbout = styled(SectionDefault)`
   height: auto;
 `;
-export const SectionKnowlodges = styled(SectionDefault)``;
-export const SectionProjects = styled(SectionDefault)``;
-export const SectionContacts = styled(SectionDefault)``;
+export const SectionKnowlodges = styled(SectionDefault)`
+  height: auto;
+  background-color: #121212;
+`;
+export const SectionProjects = styled(SectionDefault)`
+  background-color: #1e1e1e;
+`;
+export const SectionContacts = styled(SectionDefault)`
+  background-color: #000000;
+`;

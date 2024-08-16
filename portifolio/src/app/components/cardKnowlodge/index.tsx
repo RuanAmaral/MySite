@@ -1,11 +1,10 @@
 import { Orbitron } from "next/font/google";
 import { CardContainer, IconCard, SubTitleCard } from "./style";
-import { SiCsharp } from "react-icons/si";
 
 const orbitronFont = Orbitron({
   subsets: ["latin"],
   display: "swap",
-  weight: "400",
+  weight: "700",
 });
 
 
