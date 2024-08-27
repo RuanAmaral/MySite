@@ -1,47 +1,69 @@
+"use client";
 import { Orbitron } from "next/font/google";
 import {
   CardContainer,
   DescriptionCard,
+  DescriptionText,
+  IconLinkGit,
+  IconLinkView,
+  LinkAProject,
   LinksProject,
   TitleCard,
   VideoCard,
+  VideoPlayer,
 } from "./style";
-// import ReactPlayer from "react-player/file";
-
-// import example from "./example.mp4"
-// import from ".."
-// portifolio/public/videos/vidsaodama.mp4
-// import {example} from "../../../../public/videos"
-// import dd from "../../../../public/videos/vidsaodama.mp4"
 
 const orbitronFont = Orbitron({
   subsets: ["latin"],
   display: "swap",
   weight: "700",
 });
+const orbitronFontNormal = Orbitron({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
 
-export default function CardProjects() {
+interface ICardProjects {
+  title: string;
+  githubLink: string;
+  viewProjectLink?: string;
+  descriptionText: string;
+  videoPath: string;
+}
+
+export default function CardProjects({
+  title,
+  githubLink,
+  viewProjectLink,
+  descriptionText,
+  videoPath,
+}: ICardProjects) {
   return (
     <CardContainer>
-      <TitleCard className={orbitronFont.className}>
-        chat em tempo real
-      </TitleCard>
+      <TitleCard className={orbitronFont.className}>{title}</TitleCard>
       <VideoCard>
-        <video preload="none" controls>
-          <source
-            src="public/videos/vidsaodama.mp4"
-            // type="video/mp4"
-          />
-        </video>
+        <VideoPlayer preload="true" autoPlay loop muted>
+          <source src={videoPath} type="video/mp4" />
+        </VideoPlayer>
       </VideoCard>
       <DescriptionCard>
-        Lorem Ipsum é simplesmente uma simulação de texto da indústria
-        tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
-        quando um impressor desconhecido pegou uma bandeja de tipos e os
-        embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum
-        sobreviveu não só a cinco séculos, como também ao salto para a
+        <DescriptionText className={orbitronFontNormal.className}>
+          {descriptionText}
+        </DescriptionText>
       </DescriptionCard>
-      <LinksProject>links for project</LinksProject>
+      <LinksProject>
+        <LinkAProject href={githubLink}>
+          <IconLinkGit />
+        </LinkAProject>
+        {viewProjectLink ? (
+          <LinkAProject href={viewProjectLink}>
+            <IconLinkView />
+          </LinkAProject>
+        ) : (
+           null
+        )}
+      </LinksProject>
     </CardContainer>
   );
 }

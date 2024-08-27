@@ -8,6 +8,19 @@ export const ContainerProjects = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
 `;
 
-export const TitleProjects = styled.p``;
+export const ContainerProjectsCards = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 3rem;
+  justify-content: center;
+`;
+
+export const TitleProjects = styled.p`
+  margin-bottom: 20px;
+`;

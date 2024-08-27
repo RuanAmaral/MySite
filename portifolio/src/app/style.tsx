@@ -99,6 +99,7 @@ export const SectionKnowlodges = styled(SectionDefault)`
 `;
 export const SectionProjects = styled(SectionDefault)`
   background-color: #1e1e1e;
+  height: auto;
 `;
 export const SectionContacts = styled(SectionDefault)`
   background-color: #000000;

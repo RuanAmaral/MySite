@@ -1,5 +1,9 @@
 import CardProjects from "@/app/components/cardProjects";
-import { ContainerProjects, TitleProjects } from "./style";
+import {
+  ContainerProjects,
+  ContainerProjectsCards,
+  TitleProjects,
+} from "./style";
 import { Orbitron } from "next/font/google";
 
 const orbitronFont = Orbitron({
@@ -12,7 +16,15 @@ export default function ProjectsPage() {
   return (
     <ContainerProjects>
       <TitleProjects className={orbitronFont.className}>Projects</TitleProjects>
-      <CardProjects />
+      <ContainerProjectsCards>
+        <CardProjects
+          videoPath="./videos/SampleVideo_1280x720_1mb.mp4"
+          title="Chat em Tempo real"
+          descriptionText="fdfdfdf fdfdfd fdfdfd fdfdfd fdfdfd fdfdfd fdfd"
+          githubLink="#"
+          viewProjectLink="#"
+        />
+      </ContainerProjectsCards>
     </ContainerProjects>
   );
 }

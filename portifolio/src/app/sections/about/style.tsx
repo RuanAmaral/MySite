@@ -46,6 +46,8 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius:3%;
+  box-shadow: 0px 0px 10px 0px #121212;
 `;
 
 export const ImageStyle = {
