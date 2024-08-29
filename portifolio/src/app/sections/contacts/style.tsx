@@ -125,16 +125,70 @@ export const LinkedinLink = styled(LinkDiv)`
   }
 `;
 
+export const IconGithub = styled(AiFillGithub)`
+  transition: 0.5s;
+`;
+
 export const IconWhatsapp = styled(AiOutlineWhatsApp)``;
 export const IconTelegram = styled(FaTelegramPlane)``;
 export const IconPhoneNumber = styled(AiFillPhone)``;
 export const IconMail = styled(AiOutlineMail)``;
-export const IconLinkedin = styled(FaLinkedinIn)``;
-export const IconGithub = styled(AiFillGithub)``;
+export const IconLinkedin = styled(FaLinkedinIn)`
+  transition: 0.5s;
+`;
 export const IconInstagram = styled(AiFillInstagram)``;
 
-export const Footer = styled.div``;
-export const MyLogo = styled.p``;
-export const NameAndRights = styled.p``;
-export const FooterSubDivLeft = styled.div``;
-export const FooterSubDivRight = styled.div``;
+export const Footer = styled.div`
+  border-top: solid 2px #dddddd;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: end;
+  justify-content: space-between;
+  margin: 0px 0px 20px 0px;
+  padding-top: 20px;
+  transition: 0.5s;
+`;
+export const MyLogo = styled.p`
+  font-size: large;
+  margin-bottom: 10px;
+  color: #dddddd;
+`;
+export const NameAndRights = styled.p`
+  margin-bottom: 2px;
+  color: #dddddd;
+`;
+
+export const FooterSubDivLeft = styled.div`
+  width: fit-content;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const FooterSubDivRight = styled.div`
+  width: fit-content;
+  margin-right: 20px;
+  transition: 0.5s;
+`;
+export const LinkGitFooter = styled.a`
+  font-size: 40px;
+  margin-right: 10px;
+  color: #dddddd;
+  :hover {
+    transition: 0.5s;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+`;
+export const LinkLinkedinFooter = styled.a`
+  font-size: 40px;
+  margin-right: 10px;
+  color: #dddddd;
+  transition: 0.5s;
+  :hover {
+    transition: 0.5s;
+    color: #0a66c2;
+    margin-bottom: 5px;
+  }
+`;

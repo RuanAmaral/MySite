@@ -4,6 +4,8 @@ import {
   ContactsLinksDiv,
   ContactsSubContainer,
   Footer,
+  FooterSubDivLeft,
+  FooterSubDivRight,
   IconGithub,
   IconInstagram,
   IconLinkedin,
@@ -12,10 +14,14 @@ import {
   IconTelegram,
   IconWhatsapp,
   LinkedinLink,
+  LinkGitFooter,
   LinkIcons,
+  LinkLinkedinFooter,
   MailLink,
   MenssageText,
   MessageDiv,
+  MyLogo,
+  NameAndRights,
   TelegramLink,
   TextLink,
   Title,
@@ -62,14 +68,6 @@ export default function ContactsPage() {
               <TextLink>ruan.amaral.lemos@gmail.com</TextLink>
             </LinkIcons>
           </MailLink>
-          {/* <LinkIcons href="tel:+351910914377">
-            <IconPhoneNumber />
-            <TextLink>+351 910 914 377</TextLink>
-          </LinkIcons> */}
-          {/* <LinkIcons href="https://api.whatsapp.com/send?phone=351910914377&text=Hello, I have a question about your work.">
-            <IconWhatsapp />
-            <TextLink>Whatsapp</TextLink>
-          </LinkIcons> */}
           <TelegramLink>
             <LinkIcons href="https://t.me/RuanAmaralLemos">
               <IconTelegram />
@@ -77,8 +75,30 @@ export default function ContactsPage() {
             </LinkIcons>
           </TelegramLink>
         </ContactsLinksDiv>
+        {/* <LinkIcons href="tel:+351910914377">
+            <IconPhoneNumber />
+            <TextLink>+351 910 914 377</TextLink>
+          </LinkIcons> */}
+        {/* <LinkIcons href="https://api.whatsapp.com/send?phone=351910914377&text=Hello, I have a question about your work.">
+            <IconWhatsapp />
+            <TextLink>Whatsapp</TextLink>
+          </LinkIcons> */}
       </ContactsSubContainer>
-      <Footer></Footer>
+      <Footer>
+        <FooterSubDivLeft>
+          <MyLogo>RAL</MyLogo>
+          <NameAndRights>©2024 by Ruan Amaral Lemos.</NameAndRights>
+          <NameAndRights>All rights reserved.</NameAndRights>
+        </FooterSubDivLeft>
+        <FooterSubDivRight>
+          <LinkGitFooter href="https://github.com/RuanAmaral">
+            <IconGithub />
+          </LinkGitFooter>
+          <LinkLinkedinFooter href="https://www.linkedin.com/in/ruan-a-92457612a/">
+            <IconLinkedin />
+          </LinkLinkedinFooter>
+        </FooterSubDivRight>
+      </Footer>
     </ContactContainer>
   );
 }
