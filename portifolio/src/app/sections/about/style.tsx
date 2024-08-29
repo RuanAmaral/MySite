@@ -39,7 +39,6 @@ export const Title = styled.b`
 `;
 export const ImageContainer = styled.div`
   border-radius: auto;
-  /* border: solid black 2px; */
   width: 400px;
   height: 400px;
   margin: 5px;

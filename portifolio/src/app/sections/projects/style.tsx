@@ -23,4 +23,5 @@ export const ContainerProjectsCards = styled.div`
 
 export const TitleProjects = styled.p`
   margin-bottom: 20px;
+  font-size: 2rem;
 `;

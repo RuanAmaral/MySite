@@ -103,4 +103,5 @@ export const SectionProjects = styled(SectionDefault)`
 `;
 export const SectionContacts = styled(SectionDefault)`
   background-color: #000000;
+  height: auto;
 `;
