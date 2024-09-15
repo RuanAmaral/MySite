@@ -65,7 +65,7 @@ export default function ContactsPage() {
           <MailLink>
             <LinkIcons href="mailto:ruan.amaral.lemos@gmail.com">
               <IconMail />
-              <TextLink>ruan.amaral.lemos@gmail.com</TextLink>
+              <TextLink>Email</TextLink>
             </LinkIcons>
           </MailLink>
           <TelegramLink>

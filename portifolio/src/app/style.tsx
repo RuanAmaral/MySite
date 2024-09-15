@@ -5,8 +5,9 @@ import styled from "styled-components";
 export const PrincipalContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto  ;
   width: 100%;
+  transition: 0.5s;
 `;
 
 export const NavSections = styled.div`
@@ -16,6 +17,7 @@ export const NavSections = styled.div`
   position: fixed;
   display: flex;
   justify-content: space-between;
+  transition: 0.5s;
 `;
 
 // export const NavSectionsAfterHome = styled.div``
@@ -26,6 +28,7 @@ export const NavIcon = styled.div`
   justify-content: center;
   align-items: center;
   margin-left: 50px;
+  transition: 0.5s;
 `;
 
 export const UlNavSections = styled.ul`
@@ -35,6 +38,7 @@ export const UlNavSections = styled.ul`
   list-style: none;
   width: 100%;
   height: 100%;
+  transition: 0.5s;
 `;
 
 export const LiNavDefault = styled.li`
@@ -44,36 +48,47 @@ export const LiNavDefault = styled.li`
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  transition: 0.5s;
+`;
+
+export const ANavDefault = styled.a`
+  transition: 0.5s;
 `;
 
 export const LiNavHome = styled(LiNavDefault)`
+  transition: 0.5s;
   :hover {
-    color: #000000;
-    border-bottom: solid 10px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    color: #121212;
   }
 `;
 export const LiNavAbout = styled(LiNavDefault)`
   :hover {
-    color: #000000;
-    border-bottom: solid 10px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    color: #121212;
   }
 `;
 export const LiNavKnowlodges = styled(LiNavDefault)`
   :hover {
-    color: #000000;
-    border-bottom: solid 10px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    color: #121212;
   }
 `;
 export const LiNavProjects = styled(LiNavDefault)`
   :hover {
-    color: #000000;
-    border-bottom: solid 10px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    color: #121212;
   }
 `;
 export const LiNavContacts = styled(LiNavDefault)`
   :hover {
-    color: #000000;
-    border-bottom: solid 10px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    color: #121212;
   }
 `;
 

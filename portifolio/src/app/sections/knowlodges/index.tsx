@@ -80,11 +80,11 @@ export default function KnowlodgesPage() {
           />
           <CardKnowlodge
             icon={<Image src={sqlserverIcon} alt="" style={ImageStyle} />}
-            subtitle="SQLServer"
+            subtitle="SQLS"
           />
           <CardKnowlodge
             icon={<Image src={mongodbIcon} alt="" style={ImageStyle} />}
-            subtitle="MongoDB"
+            subtitle="Mongo"
           />
           <CardKnowlodge
             icon={<Image src={mysqlIcon} alt="" style={ImageStyle} />}
@@ -152,7 +152,7 @@ export default function KnowlodgesPage() {
           />
           <CardKnowlodge
             icon={<Image src={azuredevopsIcon} alt="" style={ImageStyle} />}
-            subtitle="AzureDevOps"
+            subtitle="Azure"
           />
         </TenolhogysOthersDiv>
       </OthersDiv>

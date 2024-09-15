@@ -1,6 +1,7 @@
-'use client'
+"use client";
 
 import {
+  ANavDefault,
   ContentPage,
   LiNavAbout,
   LiNavContacts,
@@ -37,48 +38,53 @@ export default function Home() {
         <NavIcon>RAL</NavIcon>
         <UlNavSections>
           <LiNavHome>
-            <a href="#" className={Exo_2Font.className}>
+            <ANavDefault href="#Home" className={Exo_2Font.className}>
               Home
-            </a>
+            </ANavDefault>
           </LiNavHome>
           <LiNavAbout>
-            <a href="#" className={Exo_2Font.className}>
+            <ANavDefault href="#About" className={Exo_2Font.className}>
               About
-            </a>
+            </ANavDefault>
           </LiNavAbout>
           <LiNavKnowlodges>
-            <a href="#" className={Exo_2Font.className}>
+            <ANavDefault href="#Knowlodges" className={Exo_2Font.className}>
               Knowlodges
-            </a>
+            </ANavDefault>
           </LiNavKnowlodges>
           <LiNavProjects>
-            <a href="#" className={Exo_2Font.className}>
+            <ANavDefault href="#Projects" className={Exo_2Font.className}>
               Projects
-            </a>
+            </ANavDefault>
           </LiNavProjects>
           <LiNavContacts>
-            <a href="#" className={Exo_2Font.className}>
+            <ANavDefault href="#Contacts" className={Exo_2Font.className}>
               Contacts
-            </a>
+            </ANavDefault>
           </LiNavContacts>
         </UlNavSections>
       </NavSections>
       <ContentPage>
-        <SectionHome>
+        <SectionHome id="Home">
           <HomePage
-            nextSectionFunction={() => alert("pass to about")}
+            nextSectionFunction={() => {
+              var i = document.getElementById("About");
+              if (i != null) {
+                window.scrollTo(0, i.offsetTop);
+              }
+            }}
           ></HomePage>
         </SectionHome>
-        <SectionAbout>
+        <SectionAbout id="About">
           <AboutPage></AboutPage>
         </SectionAbout>
-        <SectionKnowlodges>
+        <SectionKnowlodges id="Knowlodges">
           <KnowlodgesPage></KnowlodgesPage>
         </SectionKnowlodges>
-        <SectionProjects>
+        <SectionProjects id="Projects">
           <ProjectsPage></ProjectsPage>
         </SectionProjects>
-        <SectionContacts>
+        <SectionContacts id="Contacts">
           <ContactsPage></ContactsPage>
         </SectionContacts>
       </ContentPage>

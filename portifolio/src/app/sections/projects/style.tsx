@@ -8,7 +8,7 @@ export const ContainerProjects = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 30px;
 `;
 

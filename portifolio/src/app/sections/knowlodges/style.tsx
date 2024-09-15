@@ -7,7 +7,7 @@ export const KnowlodgesContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0px;
+  padding: 50px 0px 20px 0px;
 `;
 
 export const TitleText = styled.p`
@@ -30,6 +30,7 @@ export const BackEndDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 `;
 export const TenolhogysBackEndDiv = styled.div`
   display: flex;
@@ -37,7 +38,7 @@ export const TenolhogysBackEndDiv = styled.div`
   width: 70%;
   padding: 5px;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 `;
 
 export const FrontEndDiv = styled.div`
@@ -62,10 +63,10 @@ export const FrontEndTitle = styled.p``;
 export const TenolhogysFrontEndDiv = styled.div`
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 70%;
   padding: 5px;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 `;
 
 export const OthersDiv = styled.div`
@@ -80,10 +81,10 @@ export const OthersDiv = styled.div`
 export const TenolhogysOthersDiv = styled.div`
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 70%;
   padding: 5px;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 `;
 
 export const OthersTitleDiv = styled.div`
@@ -99,3 +100,5 @@ export const ImageStyle = {
   width: "80px",
   height: "80px",
 };
+
+

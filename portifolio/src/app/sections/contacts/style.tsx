@@ -34,15 +34,16 @@ export const ContactsSubContainer = styled.div`
   margin: 10px 10px 10px 10px;
   border-radius: 5px;
   padding: 2px;
-  justify-content: center;
+  justify-content: space-between;
   height: 89%;
+  width: 70%;
   flex-wrap: wrap;
 `;
 
 export const MessageDiv = styled.div`
-  height: 100%;
+  /* height: 100%; */
   display: flex;
-  width: 40%;
+  width: 100%;
   text-align: left;
   margin-right: 10px;
   flex-direction: column;
@@ -94,22 +95,22 @@ export const TelegramLink = styled(LinkDiv)`
   transition: 0.5s;
   :hover {
     transition: 0.5s;
-    background-color: #1c93e3;
-    color: #ffffff;
-    border-radius: 10px;
-    font-size: 32px;
-    padding: 2px;
+    /* background-color: #1c93e3; */
+    color: #1c93e3;
+    /* border-radius: 10px; */
+    /* font-size: 32px; */
+    /* padding-bottom: 2px; */
   }
 `;
 export const MailLink = styled(LinkDiv)`
   width: fit-content;
   transition: 0.5s;
   :hover {
-    background-color: #cb3a2e;
-    font-size: 29px;
-    border-radius: 10px;
-    padding: 2px;
-    color: #ffff;
+    /* background-color: #cb3a2e; */
+    /* font-size: 29px; */
+    /* border-radius: 10px;
+    padding: 2px; */
+    color: #cb3a2e;
   }
 `;
 export const LinkedinLink = styled(LinkDiv)`
@@ -117,11 +118,11 @@ export const LinkedinLink = styled(LinkDiv)`
   transition: 0.5s;
   :hover {
     transition: 0.5s;
-    background-color: #0a66c2;
-    color: #ffff;
-    padding: 2px;
-    font-size: 32px;
-    border-radius: 10px;
+    /* background-color: #0a66c2; */
+    color: #0a66c2;
+    /* padding: 2px; */
+    /* font-size: 32px; */
+    /* border-radius: 10px; */
   }
 `;
 
@@ -178,7 +179,7 @@ export const LinkGitFooter = styled.a`
   :hover {
     transition: 0.5s;
     color: #fff;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
   }
 `;
 export const LinkLinkedinFooter = styled.a`
@@ -189,6 +190,6 @@ export const LinkLinkedinFooter = styled.a`
   :hover {
     transition: 0.5s;
     color: #0a66c2;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
   }
 `;
