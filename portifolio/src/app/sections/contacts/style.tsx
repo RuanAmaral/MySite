@@ -18,6 +18,7 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 93.8vh;
+  padding-top: 25px;
 `;
 
 export const TitleDiv = styled.div`
@@ -51,7 +52,7 @@ export const MessageDiv = styled.div`
 `;
 
 export const MenssageText = styled.p`
-  font-size: 40px;
+  font-size: 30px;
   color: #dddddd;
 `;
 

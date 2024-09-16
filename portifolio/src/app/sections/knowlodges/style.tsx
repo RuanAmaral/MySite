@@ -7,7 +7,7 @@ export const KnowlodgesContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0px 20px 0px;
+  padding: 75px 0px 20px 0px;
 `;
 
 export const TitleText = styled.p`

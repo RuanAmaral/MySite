@@ -8,7 +8,6 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* padding-top: 10px; */
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;

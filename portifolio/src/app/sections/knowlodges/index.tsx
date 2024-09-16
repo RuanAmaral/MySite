@@ -35,13 +35,14 @@ import nextIcon from "../../../../public/images/icons/next.svg";
 import typeScriptIcon from "../../../../public/images/icons/typescript.svg";
 import cssIcon from "../../../../public/images/icons/css.svg";
 import reactIcon from "../../../../public/images/icons/react.svg";
-
 import linuxIcon from "../../../../public/images/icons/linux.svg";
 import windowsIcon from "../../../../public/images/icons/windows.svg";
 import godotIcon from "../../../../public/images/icons/godot.svg";
 import gitIcon from "../../../../public/images/icons/git.svg";
 import dockerIcon from "../../../../public/images/icons/docker.svg";
 import azuredevopsIcon from "../../../../public/images/icons/azuredevos.svg";
+
+import "./style.css";
 
 const orbitronFont = Orbitron({
   subsets: ["latin"],
@@ -59,35 +60,35 @@ export default function KnowlodgesPage() {
         <BackEndTitle className={orbitronFont.className}>Back End</BackEndTitle>
         <TenolhogysBackEndDiv>
           <CardKnowlodge
-            icon={<Image src={dotnetIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={dotnetIcon} title=".Net" alt=".Net" className="ImageStyle" />}
             subtitle=".NET"
           />
           <CardKnowlodge
-            icon={<Image src={csharpIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={csharpIcon} title="C-Sharp" alt="C-Sharp" className="ImageStyle" />}
             subtitle="C-Sharp"
           />
           <CardKnowlodge
-            icon={<Image src={nodeJsIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={nodeJsIcon} title="Node JS" alt="Node JS" className="ImageStyle" />}
             subtitle="Node Js"
           />
           <CardKnowlodge
-            icon={<Image src={rustIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={rustIcon} title="Rust" alt="Rust" className="ImageStyle" />}
             subtitle="Rust"
           />
           <CardKnowlodge
-            icon={<Image src={pythonIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={pythonIcon} title="Python" alt="Python" className="ImageStyle" />}
             subtitle=" Python"
           />
           <CardKnowlodge
-            icon={<Image src={sqlserverIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={sqlserverIcon} title="SQL Server" alt="SQL Server" className="ImageStyle" />}
             subtitle="SQLS"
           />
           <CardKnowlodge
-            icon={<Image src={mongodbIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={mongodbIcon} title="Mongo DB" alt="Mongo DB" className="ImageStyle" />}
             subtitle="Mongo"
           />
           <CardKnowlodge
-            icon={<Image src={mysqlIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={mysqlIcon} title="MySQLServer" alt="My SQL Server" className="ImageStyle" />}
             subtitle="MySql"
           />
         </TenolhogysBackEndDiv>
@@ -100,27 +101,27 @@ export default function KnowlodgesPage() {
         </FrontEndTitleDiv>
         <TenolhogysFrontEndDiv>
           <CardKnowlodge
-            icon={<Image src={javascriptIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={javascriptIcon} title="JavaScript" alt="JavaScript" className="ImageStyle" />}
             subtitle="JavaScript"
           />
           <CardKnowlodge
-            icon={<Image src={typeScriptIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={typeScriptIcon} title="TypeScript" alt="TypeScript" className="ImageStyle" />}
             subtitle="TypeScript"
           />
           <CardKnowlodge
-            icon={<Image src={reactIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={reactIcon} title="React" alt="React" className="ImageStyle" />}
             subtitle="React"
           />
           <CardKnowlodge
-            icon={<Image src={nextIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={nextIcon} title="NextJs" alt="NextJs" className="ImageStyle" />}
             subtitle="NextJs"
           />
           <CardKnowlodge
-            icon={<Image src={cssIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={cssIcon} title="CSS" alt="CSS" className="ImageStyle" />}
             subtitle="CSS"
           />
           <CardKnowlodge
-            icon={<Image src={angularIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={angularIcon} title="Angular" alt="Angular" className="ImageStyle" />}
             subtitle="Angular"
           />
         </TenolhogysFrontEndDiv>
@@ -131,27 +132,27 @@ export default function KnowlodgesPage() {
         </OthersTitleDiv>
         <TenolhogysOthersDiv>
           <CardKnowlodge
-            icon={<Image src={linuxIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={linuxIcon} title="Linux" alt="Linux" className="ImageStyle" />}
             subtitle="Linux"
           />
           <CardKnowlodge
-            icon={<Image src={gitIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={gitIcon} title="Git" alt="Git" className="ImageStyle" />}
             subtitle="Git"
           />
           <CardKnowlodge
-            icon={<Image src={godotIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={godotIcon} title="Godot" alt="Godot" className="ImageStyle" />}
             subtitle="Godot"
           />
           <CardKnowlodge
-            icon={<Image src={dockerIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={dockerIcon} title="Docker" alt="Docker" className="ImageStyle" />}
             subtitle="Docker"
           />
           <CardKnowlodge
-            icon={<Image src={windowsIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={windowsIcon} title="Windows" alt="Windows" className="ImageStyle" />}
             subtitle="Windows"
           />
           <CardKnowlodge
-            icon={<Image src={azuredevopsIcon} alt="" style={ImageStyle} />}
+            icon={<Image src={azuredevopsIcon} title="Azure Dev Ops" alt="Azure" className="ImageStyle" />}
             subtitle="Azure"
           />
         </TenolhogysOthersDiv>

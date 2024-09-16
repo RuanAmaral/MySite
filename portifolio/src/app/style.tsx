@@ -13,14 +13,13 @@ export const PrincipalContainer = styled.div`
 export const NavSections = styled.div`
   width: 100%;
   background-color: #0047ff;
-  height: 40px;
+  height: 50px;
   position: fixed;
   display: flex;
   justify-content: space-between;
   transition: 0.5s;
 `;
 
-// export const NavSectionsAfterHome = styled.div``
 
 export const NavIcon = styled.div`
   height: 100%;
@@ -47,7 +46,7 @@ export const LiNavDefault = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
   transition: 0.5s;
 `;
 
