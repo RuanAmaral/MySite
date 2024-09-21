@@ -1,11 +1,12 @@
 "use client";
 
 import styled from "styled-components";
+import { SlGlobe } from "react-icons/sl";
 
 export const PrincipalContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: auto  ;
+  height: auto;
   width: 100%;
   transition: 0.5s;
 `;
@@ -13,14 +14,12 @@ export const PrincipalContainer = styled.div`
 export const NavSections = styled.div`
   width: 100%;
   background-color: #0047ff;
-  height: 40px;
+  height: 50px;
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   transition: 0.5s;
 `;
-
-// export const NavSectionsAfterHome = styled.div``
 
 export const NavIcon = styled.div`
   height: 100%;
@@ -47,7 +46,7 @@ export const LiNavDefault = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
   transition: 0.5s;
 `;
 
@@ -58,37 +57,42 @@ export const ANavDefault = styled.a`
 export const LiNavHome = styled(LiNavDefault)`
   transition: 0.5s;
   :hover {
+    cursor: pointer;
     transition: 0.5s;
     margin-bottom: 5px;
-    color: #121212;
+    color: #1e1e1e;
   }
 `;
 export const LiNavAbout = styled(LiNavDefault)`
   :hover {
+    cursor: pointer;
     transition: 0.5s;
     margin-bottom: 5px;
-    color: #121212;
+    color: #1e1e1e;
   }
 `;
 export const LiNavKnowlodges = styled(LiNavDefault)`
   :hover {
+    cursor: pointer;
     transition: 0.5s;
     margin-bottom: 5px;
-    color: #121212;
+    color: #1e1e1e;
   }
 `;
 export const LiNavProjects = styled(LiNavDefault)`
   :hover {
+    cursor: pointer;
     transition: 0.5s;
     margin-bottom: 5px;
-    color: #121212;
+    color: #1e1e1e;
   }
 `;
 export const LiNavContacts = styled(LiNavDefault)`
   :hover {
+    cursor: pointer;
     transition: 0.5s;
     margin-bottom: 5px;
-    color: #121212;
+    color: #1e1e1e;
   }
 `;
 
@@ -117,6 +121,6 @@ export const SectionProjects = styled(SectionDefault)`
   height: auto;
 `;
 export const SectionContacts = styled(SectionDefault)`
-  background-color: #000000;
+  background-color: #121212;
   height: auto;
 `;

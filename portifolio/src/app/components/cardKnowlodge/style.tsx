@@ -12,6 +12,7 @@ export const CardContainer = styled.div`
   padding: 10px;
 `;
 
-export const IconCard = styled.div``;
+export const IconCard = styled.div`
+`;
 
 export const SubTitleCard = styled.p``;
