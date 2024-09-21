@@ -18,17 +18,12 @@ export const AboutSubContainer = styled.div`
   flex-direction: row;
   align-items: flex-start;
   width: 90%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  /* padding-left: 70px;
-padding-right: 70px; */
-  /* overflow: ; */
 `;
 
 export const TextDiv = styled.div`
   width: 600px;
-  /* padding: 0px 30px 0px 10px; */
-  /* margin-top: 25px; */
   margin-left: 30px;
   display: flex;
   justify-content: baseline;

@@ -7,14 +7,12 @@ const orbitronFont = Orbitron({
   weight: "700",
 });
 
-
 interface IcardProps {
   icon: any;
   subtitle: string;
 }
 
 export default function CardKnowlodge({ icon, subtitle }: IcardProps) {
-
   return (
     <CardContainer>
       <IconCard>{icon}</IconCard>
