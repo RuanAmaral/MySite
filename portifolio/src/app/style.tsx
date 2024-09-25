@@ -9,6 +9,7 @@ export const PrincipalContainer = styled.div`
   height: auto;
   width: 100%;
   transition: 0.5s;
+  color: #ffffff;
 `;
 
 export const NavSections = styled.div`

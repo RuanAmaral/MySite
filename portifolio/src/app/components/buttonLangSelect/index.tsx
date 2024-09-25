@@ -1,28 +1,15 @@
 import { useRef, useState } from "react";
-import {
-  ArrowDown,
-  ArrowLeft,
-  ButtonLang,
-  GlobeIcon,
-  InsideValue,
-} from "./style";
+import { ButtonLang, DivSelect, GlobeIcon, OptionSelect } from "./style";
 
-export default function ButtonLangSelect() {
-  const [selectedArrow, setSelectedArrow] = useState(true);
-
-  const openBox = () => {
-    selectedArrow ? setSelectedArrow(false) : setSelectedArrow(true);
-  };
+export default function ButtonLangSelect() {  
 
   return (
-    <ButtonLang
-      onClick={() => {
-        openBox();
-      }}
-    >
+    <DivSelect>
       <GlobeIcon />
-      <InsideValue>PT</InsideValue>
-      {selectedArrow ? <ArrowLeft /> : <ArrowDown />}
-    </ButtonLang>
+      <ButtonLang>
+        <OptionSelect>PT</OptionSelect>
+        <OptionSelect>EN</OptionSelect>
+      </ButtonLang>
+    </DivSelect>
   );
 }
