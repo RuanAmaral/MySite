@@ -54,7 +54,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const ImageStyle = {
-  width: "100%",
+  width: "80%",
   height: "100%",
   borderRadius: "3%",
 };

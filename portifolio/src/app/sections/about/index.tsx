@@ -9,7 +9,7 @@ import {
 } from "./style";
 import { Orbitron } from "next/font/google";
 import Image from "next/image";
-import exemple from "../../../../public/images/perfilexample.png";
+import ImageProfile from   "../../../../public/images/imageProfile.png";
 
 const orbitronFont = Orbitron({
   subsets: ["latin"],
@@ -28,7 +28,7 @@ export default function AboutPage() {
     <AboutContainer>
       <AboutSubContainer>
         <ImageContainer>
-          <Image src={exemple} alt={"pefil image"} style={ImageStyle} />
+          <Image src={ImageProfile} alt={"pefil image"} style={ImageStyle} />
         </ImageContainer>
         <TextDiv>
       <Title className={orbitronFontBold.className}>Aboute me</Title>
