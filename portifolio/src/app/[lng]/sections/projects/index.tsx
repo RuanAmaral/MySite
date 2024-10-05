@@ -1,4 +1,4 @@
-import CardProjects from "@/app/components/cardProjects";
+import CardProjects from "@/app/[lng]/components/cardProjects";
 import {
   ContainerProjects,
   ContainerProjectsCards,

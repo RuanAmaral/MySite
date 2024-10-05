@@ -9,7 +9,7 @@ import {
 } from "./style";
 import { Orbitron } from "next/font/google";
 import Image from "next/image";
-import ImageProfile from   "../../../../public/images/imageProfile.png";
+import ImageProfile from   "../../../../../public/images/imageProfile.png";
 
 const orbitronFont = Orbitron({
   subsets: ["latin"],

@@ -254,7 +254,7 @@ export default function Home() {
             </ANavDefault>
           </LiNavContacts>
         </UlNavSections>
-        <ButtonLangSelect/>
+        <ButtonLangSelect />
       </NavSections>
       <ContentPage>
         <SectionHome id="Home">

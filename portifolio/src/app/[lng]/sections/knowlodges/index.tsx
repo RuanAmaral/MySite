@@ -17,30 +17,30 @@ import {
   FrontEndTitleDiv,
   OthersTitleDiv,
 } from "./style";
-import CardKnowlodge from "@/app/components/cardKnowlodge";
+import CardKnowlodge from "@/app/[lng]/components/cardKnowlodge";
 
 import Image from "next/image";
 
-import dotnetIcon from "../../../../public/images/icons/dotnet.svg";
-import csharpIcon from "../../../../public/images/icons/csharp.svg";
-import mongodbIcon from "../../../../public/images/icons/mongodb.svg";
-import mysqlIcon from "../../../../public/images/icons/mysql.svg";
-import pythonIcon from "../../../../public/images/icons/python.svg";
-import rustIcon from "../../../../public/images/icons/rust.svg";
-import sqlserverIcon from "../../../../public/images/icons/sqlserver.svg";
-import nodeJsIcon from "../../../../public/images/icons/nodejs.svg";
-import angularIcon from "../../../../public/images/icons/angular.svg";
-import javascriptIcon from "../../../../public/images/icons/javascript.svg";
-import nextIcon from "../../../../public/images/icons/next.svg";
-import typeScriptIcon from "../../../../public/images/icons/typescript.svg";
-import cssIcon from "../../../../public/images/icons/css.svg";
-import reactIcon from "../../../../public/images/icons/react.svg";
-import linuxIcon from "../../../../public/images/icons/linux.svg";
-import windowsIcon from "../../../../public/images/icons/windows.svg";
-import godotIcon from "../../../../public/images/icons/godot.svg";
-import gitIcon from "../../../../public/images/icons/git.svg";
-import dockerIcon from "../../../../public/images/icons/docker.svg";
-import azuredevopsIcon from "../../../../public/images/icons/azuredevos.svg";
+import dotnetIcon from     "../../../../../public/images/icons/dotnet.svg";
+import csharpIcon from     "../../../../../public/images/icons/csharp.svg";
+import mongodbIcon from    "../../../../../public/images/icons/mongodb.svg";
+import mysqlIcon from      "../../../../../public/images/icons/mysql.svg";
+import pythonIcon from     "../../../../../public/images/icons/python.svg";
+import rustIcon from       "../../../../../public/images/icons/rust.svg";
+import sqlserverIcon from  "../../../../../public/images/icons/sqlserver.svg";
+import nodeJsIcon from     "../../../../../public/images/icons/nodejs.svg";
+import angularIcon from    "../../../../../public/images/icons/angular.svg";
+import javascriptIcon from "../../../../../public/images/icons/javascript.svg";
+import nextIcon from       "../../../../../public/images/icons/next.svg";
+import typeScriptIcon from "../../../../../public/images/icons/typescript.svg";
+import cssIcon from        "../../../../../public/images/icons/css.svg";
+import reactIcon from      "../../../../../public/images/icons/react.svg";
+import linuxIcon from      "../../../../../public/images/icons/linux.svg";
+import windowsIcon from    "../../../../../public/images/icons/windows.svg";
+import godotIcon from      "../../../../../public/images/icons/godot.svg";
+import gitIcon from        "../../../../../public/images/icons/git.svg";
+import dockerIcon from     "../../../../../public/images/icons/docker.svg";
+import azuredevopsIcon from "../../../../../public/images/icons/azuredevos.svg";
 
 import "./style.css";
 
